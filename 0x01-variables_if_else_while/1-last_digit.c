@@ -4,9 +4,7 @@
 
 /**
  * main - a program that prints the last digit of a random number
- * and whether it's less than 6,
- * greater than 5, 
- * or 0
+ * and whether it's less than 6 greater than 5 or 0
  *
  * Return: Always 0
  */
@@ -17,7 +15,6 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
 	if ((n % 10) < 6 && (n % 10) != 0)
 	{
 		printf("Last digit of %i is %i and is less than 6 and not 0\n",
