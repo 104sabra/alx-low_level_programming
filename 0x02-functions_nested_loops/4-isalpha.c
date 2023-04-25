@@ -6,7 +6,7 @@
  * Return: 1 if c is alphabetic, otherwise 0
  */
 
-int _islower(int c)
+int _isalpha(int c)
 {
 	while ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
