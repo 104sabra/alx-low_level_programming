@@ -20,6 +20,7 @@ void times_table(void)
 			{
 				_putchar(z / 10 + '0');
 				_putchar(z % 10 + '0');
+				_putchar(' ');
 			}
 			else
 			{
@@ -28,6 +29,7 @@ void times_table(void)
 					_putchar(' ');
 				}
 				_putchar(z + '0');
+				_putchar(' ');
 			}
 			if (y != 9)
 			{
@@ -39,5 +41,4 @@ void times_table(void)
 		_putchar('\n');
 		x++;
 	}
-	return;
 }
