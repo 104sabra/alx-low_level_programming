@@ -8,14 +8,15 @@
 
 int print_last_digit(int num)
 {
+	long lnum = num;
 	int lastD;
 
-	if (num < 0)
+	if (lnum < 0)
 	{
-		num = -num;
+		lnum = -lnum;
 	}
 
-	lastD = num % 10;
+	lastD = (int)(lnum % 10);
 
 	_putchar(lastD + '0');
 
