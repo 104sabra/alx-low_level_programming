@@ -8,7 +8,7 @@
 
 int _isdigit(int c)
 {
-	while (c >= 49 && c <= 57)
+	while (c >= 48 && c <= 57)
 	{
 		return (1);
 	}
