@@ -6,17 +6,16 @@
  * Return: void
  */
 
-int _strlen(char *s);
-
 void print_rev(char *s)
 {
-	int len = _strlen(s);
+	int len = 0;
 	int i;
 
-	/** a reverse loop
-	 * iterate over the string
-	 * starting from the last character
-	 */
+	while (s[len] != 0)
+	{
+		len++;
+	}
+
 	for (i = len - 1; i >= 0; i--)
 	{
 		_putchar(s[i]);
