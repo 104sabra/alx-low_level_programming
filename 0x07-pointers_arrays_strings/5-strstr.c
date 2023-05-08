@@ -4,7 +4,7 @@
  * _strstr - locates a substring
  * @haystack: string to be searched
  * @needle: the substring to be located
- * Return: pointer to the located substring, 
+ * Return: pointer to the located substring,
  * NULL if not found
  */
 
@@ -38,7 +38,6 @@ char *_strstr(char *haystack, char *needle)
 				}
 				j++;
 			}
-			
 			if (needle[j] == '\0')
 				return (haystack + i);
 		}
