@@ -4,9 +4,10 @@
 
 /**
  * string_nconcat - concatenates two strings
- * @s1: pointer to first string
- * @s2: pointer to second string
+ * @s1: pointer to 1st string
+ * @s2: pointer to 2nd string
  * @n: number of bytes from s2 to concatenate with s1
+ * @s: string
  * Return: pointer to allocated memory, NULL on failure
  */
 
@@ -46,8 +47,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 /**
  * _strlen - gets the length of a string
- * @s: a pointer to the 1st character
- * Return: length
+ * @s:  pointer to the input string
+ *
+ * Return: length of the string
  */
 
 int _strlen(char *s)
