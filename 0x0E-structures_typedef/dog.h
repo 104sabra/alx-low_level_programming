@@ -7,7 +7,8 @@
  * @age: dog's age float
  * @owner: dog's owner string
  *
- * Description: a dog struct that has the elements name, age and owner inside it
+ * Description: a dog struct that has the elements name,
+ * age and owner inside it
  */
 
 typedef struct dog
