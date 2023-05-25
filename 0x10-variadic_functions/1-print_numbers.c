@@ -13,8 +13,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list nums;
 	int l;
 
-	if (n == 0)
-		return;
 	if (!separator)
 		separator = "";
 
