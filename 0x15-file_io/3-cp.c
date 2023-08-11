@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * err - error detector
+ * err_file - error detector
  * @file_from: file from..
  * @file_to: file to..
  * @argv: vector of arguments
@@ -40,11 +40,9 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
-	
 	file_from = open(argv[1], O_RDONLY);
 	file_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	err_file(file_from, file_to, argv);
-
 	bytes = 1024;
 	while (bytes)
 	{
@@ -55,22 +53,17 @@ int main(int argc, char *argv[])
 		if (w == -1)
 			err_file(0, -1, argv);
 	}
-
 	err = close(file_from);
-
 	if (err == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_from);
 		exit(100);
 	}
-
 	err = close(file_to);
-
 	if (err == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_to);
 		exit(100);
 	}
-
 	return (0);
 }
